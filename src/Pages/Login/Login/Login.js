@@ -3,7 +3,10 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -22,6 +25,9 @@ const Login = () => {
     );
     let errorMessage;
     const from = location.state?.from?.pathname || "/";
+    if (loading) {
+        <Loading></Loading>
+    }
     if (user) {
         navigate(from, { replace: true });
     }
@@ -41,8 +47,14 @@ const Login = () => {
     }
     const ResetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('Sent email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else {
+            toast('Please enter your email');
+        }
+
     }
     const navigateRegister = () => {
         navigate('/register');
@@ -71,6 +83,7 @@ const Login = () => {
                 <p className='my-2'>Forget your Password? <Button variant="link" className='text-primary text-decoration-none' onClick={ResetPassword}>Reset Password... </Button></p>
                 <p className='text-danger'>{errorMessage}</p>
                 <SocialLogin></SocialLogin>
+                <ToastContainer></ToastContainer>
             </Form>
         </div>
     );

@@ -5,12 +5,16 @@ import facebook from '../../../Images/Logo/facebook.png'
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { Navigate, useNavigate } from 'react-router-dom';
+import Loading from '../../Shared/Loading/Loading';
 
 const SocialMedia = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user2, loading2, error2] = useSignInWithGithub(auth);
     const navigate = useNavigate();
     let errorMessage;
+    if (loading || loading2) {
+        <Loading></Loading>
+    }
     if (error || error2) {
         errorMessage = <p>Error: {error?.message} || {error2?.message}</p>
     }

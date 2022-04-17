@@ -19,9 +19,9 @@ const Service = ({ service }) => {
                         <p>Product Description : {description}</p>
                     </Card.Text>
                     <Card.Text>
-                        <p>Price : ${price}</p>
+                        <p>Subscription Fee : ${price}</p>
                     </Card.Text>
-                    <Button onClick={navigateCheckout} className='Buy-btn' variant="primary">Buy Now</Button>
+                    <Button onClick={navigateCheckout} className='Buy-btn' variant="primary">Booking Now</Button>
                 </Card.Body>
             </Card>
 
