@@ -1,9 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css';
-import banner1 from '../../Images/Banner-images/1906.i003.014.fitness sport health text.jpg';
-import banner2 from '../../Images/Banner-images/1545.jpg';
-import banner3 from '../../Images/Banner-images/jelmer-assink-gzeTjGu3b_k-unsplash.jpg';
+import banner1 from '../../Images/Banner-images/1.jpg';
+import banner2 from '../../Images/Banner-images/2.jpg';
+import banner3 from '../../Images/Banner-images/3.jpg';
 
 const Banner = () => {
     return (
