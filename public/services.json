@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Adjustable Bench",
+        "price": 300,
+        "description": "The adjustable weight bench is ideal for working out and training on your chest, shoulders, back, abs, and more.",
+        "img": "https://ibb.co/CzbHxxB"
+    },
+    {
+        "id": 2,
+        "name": "Dumbbells",
+        "price": 50,
+        "description": "Dumbbells are used to strengthen the body and to tone the muscles, along with increasing their size.",
+        "img": "https://ibb.co/qdjFKP5"
+    },
+    {
+        "id": 3,
+        "name": "Gym Bike",
+        "price": 280,
+        "description": "Riding a stationary bike can help build strength in your legs and lower body, especially if you use a higher resistance.",
+        "img": "https://ibb.co/CJXfdhh"
+    },
+    {
+        "id": 4,
+        "name": "Flat Bench Press",
+        "price": 230,
+        "description": "The flat bench press involves both portions of the pectoralis major muscle but focuses on the lower (sternal) head as well as the anterior deltoid muscle.",
+        "img": "https://ibb.co/X2YGG18"
+    },
+    {
+        "id": 5,
+        "name": "Exercise Ball",
+        "price": 100,
+        "description": "A usually large, inflated plastic or rubber ball used especially for strengthening muscles and improving posture and balance.",
+        "img": "https://ibb.co/R0sNBDQ"
+    },
+    {
+        "id": 6,
+        "name": "Treadmill",
+        "price": 300,
+        "description": "A treadmill is a piece of exercise equipment that has a belt that loops around, driven by a motor.",
+        "img": "https://ibb.co/DPXTdHY"
+    }
+]
