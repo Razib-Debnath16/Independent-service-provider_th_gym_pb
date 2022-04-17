@@ -21,7 +21,10 @@ const Login = () => {
         auth
     );
     let errorMessage;
-    let from = location.state?.from?.pathname || "/";
+    const from = location.state?.from?.pathname || "/";
+    if (user) {
+        navigate(from, { replace: true });
+    }
     if (error) {
         errorMessage = <div>
             <p>Error: {error.message}</p>
@@ -41,11 +44,8 @@ const Login = () => {
         await sendPasswordResetEmail(email);
         alert('Sent email');
     }
-    if (user) {
-        navigate(from, { replace: true });
-    }
     const navigateRegister = () => {
-        navigate(`/register`);
+        navigate('/register');
     }
     return (
         <div>

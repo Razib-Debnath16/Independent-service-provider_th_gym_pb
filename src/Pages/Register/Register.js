@@ -20,9 +20,6 @@ const Register = () => {
     const navigateLogin = () => {
         navigate('/login');
     }
-    if (user) {
-
-    }
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         const name = event.target.name.value;
