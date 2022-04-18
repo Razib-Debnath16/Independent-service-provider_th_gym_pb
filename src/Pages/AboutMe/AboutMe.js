@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import img from '../../Images/AboutMe/IMG_20211211_163000__01.jpg';
+import img from '../../Images/AboutMe/IMG_20211211_163000__02.jpg';
 
 const AboutMe = () => {
     return (

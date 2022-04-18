@@ -2,6 +2,30 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Project Name
+
+(Thor-GYM)
+
+### Project Live Website Link
+
+(https://thor-gym-1ba89.firebaseapp.com/)
+
+### Project Description
+
+This project is based on an individual who provides services.Let's describe the project's details in given bellow :
+
+* In this project i am acted as a Gym trainer who provides services.In header     section we can see some component like home,services,reviews,blogs,about me and login.
+* In home section 4 component will be shown..they are header,services,customer's  
+review,and footer.
+* In services section we show the services which we provide.if someone need to book something he or she must be login.without login one can't booking something.
+* In reviews section we show some review of our customer's.And blogs section we we answered some given questions.And in the about section i describe about myself.
+* In the login section we provide a form which need to filled up for registration and login.
+
+### Technology Uses in this project
+
+* We use firebase for Authentication.
+* We use React,Bootstrap,Js,CSS,React-Router,React-firebase-hooks.
+
 ## Available Scripts
 
 In the project directory, you can run:
