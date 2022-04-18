@@ -27,6 +27,7 @@ const Register = () => {
         const password = event.target.password.value;
         // console.log(email, password);
         createUserWithEmailAndPassword(email, password);
+        // update User-name
         await updateProfile({ displayName: name });
         console.log('Updated profile');
         navigate('/home');

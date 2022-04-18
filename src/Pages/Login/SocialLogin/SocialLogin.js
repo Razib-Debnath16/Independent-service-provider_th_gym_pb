@@ -8,6 +8,7 @@ import { Navigate, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
 
 const SocialMedia = () => {
+    // using react-firebase-hook for authentication
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user2, loading2, error2] = useSignInWithGithub(auth);
     const navigate = useNavigate();
